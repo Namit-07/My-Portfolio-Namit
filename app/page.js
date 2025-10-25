@@ -53,9 +53,9 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center flex-col ">
           <div className="relative z-[100]" style={{width: '500px', height: '600px'}}>
-               <Image className="rounded-4xl object-cover " src="/img1.jpg" fill alt="Zay Dante" />
+               <Image className="rounded-4xl object-cover " src="/img1.jpg" fill alt="Namit Tickoo" />
             <p className=" absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white font-semibold px-4 py-2 rounded">
-              Namit Tickoo. Dev.
+              Namit Tickoo. coder.
             </p>
           </div>
         </div>

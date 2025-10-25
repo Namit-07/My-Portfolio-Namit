@@ -7,15 +7,20 @@ import Link from "next/link";
 export default function Projects() {
     const [hideNavbar, setHideNavbar] = useState(false);
     const section2Ref = useRef(null);
+    const section3Ref = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
+                    if (entry.isIntersecting && (entry.target === section2Ref.current || entry.target === section3Ref.current)) {
                         setHideNavbar(true);
-                    } else {
-                        setHideNavbar(false);
+                    } else if (entry.target === section2Ref.current && !entry.isIntersecting) {
+                        
+                        const section2Top = section2Ref.current.getBoundingClientRect().top;
+                        if (section2Top > 0) {
+                            setHideNavbar(false);
+                        }
                     }
                 });
             },
@@ -25,10 +30,16 @@ export default function Projects() {
         if (section2Ref.current) {
             observer.observe(section2Ref.current);
         }
+        if (section3Ref.current) {
+            observer.observe(section3Ref.current);
+        }
 
         return () => {
             if (section2Ref.current) {
                 observer.unobserve(section2Ref.current);
+            }
+            if (section3Ref.current) {
+                observer.unobserve(section3Ref.current);
             }
         };
     }, []);
@@ -51,37 +62,76 @@ export default function Projects() {
                 <div className="flex justify-center flex-col ml-[10vw] my-50">
                     <p className="text-[#1e2330] font-extrabold text-6xl whitespace-nowrap">BiTTree</p>
                     <p className="text-[#1e2330] font-extrabold text-3xl">LinkTree Clone.</p>
-                    
+
                     <div className="flex my-6">
                         <span className="text-[#1e2330] font-bold text-xl">Tech Stack:</span>
-                        <span className="text-[#1e2330] font-medium text-lg ml-2">Next.js, Tailwind CSS, Node.js, MongoDB</span>
+                        <span className="text-[#1e2330] font-medium text-lg ml-2">Next.js, React, Tailwind CSS, Node.js, MongoDB</span>
                     </div>
 
                     <div className="my-2">
-                    <p className="text-[#1e2330] font-bold text-xl m">Description:</p>
-                    <p className="text-[#1e2330] font-medium text-lg ">A customizable profile link aggregator that lets users share multiple links through a single bio page.</p>
+                        <p className="text-[#1e2330] font-bold text-xl m">Description:</p>
+                        <p className="text-[#1e2330] font-medium text-lg ">A customizable profile link aggregator that lets users share multiple links through a single bio page.</p>
                     </div>
 
                     <div className="my-5">
-                    <p className="text-[#1e2330] font-bold text-xl ">Key Features:</p>
-                    <p className="text-[#1e2330] font-medium text-lg ">- Dynamic user dashboard for managing links.</p>
-                    <p className="text-[#1e2330] font-medium text-lg ">- Backend API integration for link management.</p>
-                    <p className="text-[#1e2330] font-medium text-lg ">- Responsive, minimal UI with Tailwind.</p>
-                    <p className="text-[#1e2330] font-medium text-lg ">- Next.js for server-side rendering and SEO optimization.</p>
+                        <p className="text-[#1e2330] font-bold text-xl ">Key Features:</p>
+                        <p className="text-[#1e2330] font-medium text-lg ">- Dynamic user dashboard for managing links.</p>
+                        <p className="text-[#1e2330] font-medium text-lg ">- Backend API integration for link management.</p>
+                        <p className="text-[#1e2330] font-medium text-lg ">- Responsive, minimal UI with Tailwind.</p>
+                        <p className="text-[#1e2330] font-medium text-lg ">- Next.js for server-side rendering and SEO optimization.</p>
                     </div>
-                    
+
                     <div className="input flex ">
                         <Link href="http://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Link%20Tree/linktree" target="_blank" rel="noopener noreferrer">
-                        <button className="text-white bg-[#1e2330] py-3 px-14 rounded-full mx-50 text-2xl whitespace-nowrap my-5 cursor-pointer hover:scale-110 hover:shadow-2xl hover:bg-[#2a3040] transition-all duration-300 ease-in-out active:scale-95">Github</button>
+                            <button className="text-white bg-[#1e2330] py-3 px-14 rounded-full mx-40 text-2xl whitespace-nowrap my-5 cursor-pointer hover:scale-110 hover:shadow-2xl hover:bg-[#2a3040] transition-all duration-300 ease-in-out active:scale-95">🔗Github</button>
                         </Link>
                     </div>
                 </div>
                 <div className="flex items-center justify-center flex-col ">
                     <div className="relative z-[100] hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" style={{ width: '700px', height: '500px' }}>
                         <Link href="http://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Link%20Tree/linktree" target="_blank" rel="noopener noreferrer">
-                        <Image className="rounded-4xl" src="/p1.png" fill alt="project1" />
+                            <Image className="rounded-4xl" src="/p1.png" fill alt="project1" />
                         </Link>
 
+                    </div>
+                </div>
+            </section>
+
+            <section ref={section3Ref} className="bg-[#d2e823] min-h-screen grid grid-cols-2">
+                <div className="flex items-center justify-center flex-col ">
+                    <div className="relative z-[100] hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" style={{ width: '600px', height: '400px' }}>
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Password%20Manager" target="_blank" rel="noopener noreferrer">
+                            <Image className="rounded-4xl" src="/p2.png" fill alt="project1" />
+                        </Link>
+
+                    </div>
+                </div>
+                <div className="flex justify-center flex-col ml-[10vw] my-50">
+                    <p className="text-[#254f1a] font-extrabold text-6xl whitespace-nowrap">&lt;PassJAIL/&gt;</p>
+                    <p className="text-[#254f1a] font-extrabold text-3xl">(Local & MongoDB Version).</p>
+
+                    <div className="flex my-6">
+                        <span className="text-[#254f1a] font-bold text-xl">Tech Stack:</span>
+                        <span className="text-[#254f1a] font-medium text-lg ml-2">React, Node.js, Express, MongoDB, Tailwind CSS</span>
+                    </div>
+
+                    <div className="my-2">
+                        <p className="text-[#254f1a] font-bold text-xl m">Description:</p>
+                        <p className="text-[#254f1a] font-medium text-lg ">A secure web-based password management tool that allows users to store, edit, and manage their credentials locally or via MongoDB for cloud access.</p>
+                    </div>
+
+                    <div className="my-5">
+                        <p className="text-[#254f1a] font-bold text-xl ">Key Features:</p>
+                        <p className="text-[#254f1a] font-medium text-lg ">- CRUD operations for storing and retrieving passwords.</p>
+                        <p className="text-[#254f1a] font-medium text-lg ">- Built using modern UI with Tailwind CSS.</p>
+                        <p className="text-[#254f1a] font-medium text-lg ">- LocalStorage + MongoDB integration for offline and online versions.</p>
+                        <p className="text-[#254f1a] font-medium text-lg ">- Implements best practices for form handling and data validation.</p>
+                    </div>
+
+                    <div className="input flex ">
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Password%20Manager" target="_blank" rel="noopener noreferrer">
+                            <button className="text-white bg-[#254f1a] py-3 px-14 rounded-full mx-40 text-2xl whitespace-nowrap my-5 cursor-pointer hover:scale-110 hover:shadow-2xl hover:bg-[#2a3040] transition-all duration-300 ease-in-out active:scale-95">🔗Github</button>
+                        </Link>
                     </div>
                 </div>
             </section>
