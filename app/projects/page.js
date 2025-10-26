@@ -8,12 +8,13 @@ export default function Projects() {
     const [hideNavbar, setHideNavbar] = useState(false);
     const section2Ref = useRef(null);
     const section3Ref = useRef(null);
+    const section4Ref = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (entry.isIntersecting && (entry.target === section2Ref.current || entry.target === section3Ref.current)) {
+                    if (entry.isIntersecting && (entry.target === section2Ref.current || entry.target === section3Ref.current || entry.target === section4Ref.current )) {
                         setHideNavbar(true);
                     } else if (entry.target === section2Ref.current && !entry.isIntersecting) {
                         
@@ -39,6 +40,9 @@ export default function Projects() {
                 observer.unobserve(section2Ref.current);
             }
             if (section3Ref.current) {
+                observer.unobserve(section3Ref.current);
+            }
+            if (section4Ref.current) {
                 observer.unobserve(section3Ref.current);
             }
         };
@@ -106,7 +110,7 @@ export default function Projects() {
 
                     </div>
                 </div>
-                <div className="flex justify-center flex-col ml-[10vw] my-50">
+                <div className="flex justify-center flex-col ml-[5vw] my-50">
                     <p className="text-[#254f1a] font-extrabold text-6xl whitespace-nowrap">&lt;PassJAIL/&gt;</p>
                     <p className="text-[#254f1a] font-extrabold text-3xl">(Local & MongoDB Version).</p>
 
@@ -131,6 +135,83 @@ export default function Projects() {
                     <div className="input flex ">
                         <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Password%20Manager" target="_blank" rel="noopener noreferrer">
                             <button className="text-white bg-[#254f1a] py-3 px-14 rounded-full mx-40 text-2xl whitespace-nowrap my-5 cursor-pointer hover:scale-110 hover:shadow-2xl hover:bg-[#2a3040] transition-all duration-300 ease-in-out active:scale-95">🔗Github</button>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section ref={section4Ref} className="bg-[#2665d6] min-h-screen grid grid-cols-2">
+                <div className="flex justify-center flex-col ml-[8vw] my-50">
+                    <p className="text-white font-extrabold text-6xl whitespace-nowrap">Todo List App</p>
+                    <p className="text-white font-extrabold text-3xl">Everyday Planner.</p>
+
+                    <div className="flex my-6">
+                        <span className="text-white font-bold text-xl">Tech Stack:</span>
+                        <span className="text-white font-medium text-lg ml-2">React, TailwindCSS</span>
+                    </div>
+
+                    <div className="my-2">
+                        <p className="text-white font-bold text-xl m">Description:</p>
+                        <p className="text-white font-medium text-lg ">A customizable todo list app that helps users plan and manage their daily tasks efficiently.</p>
+                    </div>
+
+                    <div className="my-5">
+                        <p className="text-white font-bold text-xl ">Key Features:</p>
+                        <p className="text-white font-medium text-lg ">- Add, delete, and mark tasks as complete.</p>
+                        <p className="text-white font-medium text-lg ">- Data persistence using browser storage.</p>
+                        <p className="text-white font-medium text-lg ">- Lightweight UI with responsive design.</p>
+                    </div>
+
+                    <div className="input flex ">
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/ToDo%20List" target="_blank" rel="noopener noreferrer">
+                            <button className="text-white bg-black py-3 px-14 rounded-full mx-40 text-2xl whitespace-nowrap my-5 cursor-pointer hover:scale-110 hover:shadow-2xl hover:bg-[#2a3040] transition-all duration-300 ease-in-out active:scale-95">🔗Github</button>
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex items-center justify-center flex-col ">
+                    <div className="relative z-[100] hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" style={{ width: '700px', height: '500px' }}>
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/ToDo%20List" target="_blank" rel="noopener noreferrer">
+                            <Image className="rounded-4xl" src="/p3.png" fill alt="project1" />
+                        </Link>
+
+                    </div>
+                </div>
+            </section>
+
+            <section ref={section3Ref} className="bg-[#780016] min-h-screen grid grid-cols-2">
+                <div className="flex items-center justify-center flex-col ">
+                    <div className="relative z-[100] hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer" style={{ width: '600px', height: '400px' }}>
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Password%20Manager" target="_blank" rel="noopener noreferrer">
+                            <Image className="rounded-4xl" src="/p4.png" fill alt="project1" />
+                        </Link>
+
+                    </div>
+                </div>
+                <div className="flex justify-center flex-col ml-[5vw] my-50">
+                    <p className="text-[#e9c0e9] font-extrabold text-6xl whitespace-nowrap">X.com</p>
+                    <p className="text-[#e9c0e9] font-extrabold text-3xl">Twitter Clone.</p>
+
+                    <div className="flex my-6">
+                        <span className="text-[#e9c0e9] font-bold text-xl">Tech Stack:</span>
+                        <span className="text-[#e9c0e9] font-medium text-lg ml-2">React, Tailwind CSS</span>
+                    </div>
+
+                    <div className="my-2">
+                        <p className="text-[#e9c0e9] font-bold text-xl m">Description:</p>
+                        <p className="text-[#e9c0e9] font-medium text-lg ">A Twitter clone built with React and Tailwind CSS, featuring real-time updates and a responsive design.</p>
+                    </div>
+
+                    <div className="my-5">
+                        <p className="text-[#e9c0e9] font-bold text-xl ">Key Features:</p>
+                        <p className="text-[#e9c0e9] font-medium text-lg ">- Real-time updates and notifications.</p>
+                        <p className="text-[#e9c0e9] font-medium text-lg ">- Built using modern UI with Tailwind CSS.</p>
+                        <p className="text-[#e9c0e9] font-medium text-lg ">- Responsive design for mobile and desktop views.</p>
+                        <p className="text-[#e9c0e9] font-medium text-lg ">- Implements best practices for form handling and data validation.</p>
+                    </div>
+
+                    <div className="input flex ">
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Password%20Manager" target="_blank" rel="noopener noreferrer">
+                            <button className="text-black bg-[#d2e823] py-3 px-14 rounded-full mx-40 text-2xl whitespace-nowrap my-5 cursor-pointer hover:scale-110 hover:shadow-2xl hover:bg-[#2a3040] transition-all duration-300 ease-in-out active:scale-95">🔗Github</button>
                         </Link>
                     </div>
                 </div>

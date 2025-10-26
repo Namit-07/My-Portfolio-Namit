@@ -45,7 +45,7 @@ export default function Home() {
         <div className="flex justify-center flex-col ml-[10vw] my-70">
           <p className="text-[#254f1a] font-extrabold text-7xl whitespace-nowrap">Welcome To My</p>
           <p className="text-[#254f1a] font-extrabold text-7xl">Portfolio.</p>
-          <p className="text-[#254f1a] font-medium text-xl my-6 ">Hey there! I’m Namit Tickoo, a developer who loves turning ideas into interactive digital experiences. From React and Node.js to Next.js, I build fast, reliable, and beautiful web apps — and I’m on a mission to contribute to open source and crack GSoC 2026 🚀</p>
+          <p className="text-[#254f1a] font-medium text-xl my-6 ">Hey there! I’m Namit Tickoo, Full-Stack developer who loves turning ideas into interactive digital experiences. From React and Node.js to Next.js, I build fast, reliable, and beautiful web apps — and I’m on a mission to contribute to open source and crack GSoC 2026 🚀</p>
           <div className="input flex gap-2">
             <input className="bg-white rounded-md py-5 px-8 font-bold text-center"  placeholder="A cup of tea for you" readOnly />
             <button className="text-white bg-[#254f1a] py-3 px-14 rounded-full font-bold text-2xl whitespace-nowrap hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out active:scale-95">🍵</button>
