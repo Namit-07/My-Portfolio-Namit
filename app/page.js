@@ -60,8 +60,8 @@ export default function Home() {
             <button className="text-white bg-[#254f1a] py-3 px-10 lg:px-14 rounded-full font-bold text-xl lg:text-2xl whitespace-nowrap hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out active:scale-95">🍵</button>
           </div>
         </div>
-        <div className="flex items-center justify-center flex-col order-1 lg:order-2 pt-30 pb-8 lg:py-0">
-          <div className="relative w-[300px] h-[360px] sm:w-[400px] sm:h-[480px] lg:w-[500px] lg:h-[600px]">
+        <div className="flex items-center justify-center flex-col order-1 lg:order-2 pt-30 pb-8 lg:py-0 relative">
+          <div className="relative w-[300px] h-[360px] sm:w-[400px] sm:h-[480px] lg:w-[500px] lg:h-[600px]" >
                <Image className="rounded-4xl object-cover" src="/img1.jpg" fill alt="Namit Tickoo" />
             <p className="absolute bottom-4 lg:bottom-8 left-1/2 transform -translate-x-1/2 text-white font-semibold px-4 py-2 rounded text-sm lg:text-base">
               Namit Tickoo. coder.
