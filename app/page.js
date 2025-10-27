@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center flex-col order-1 lg:order-2 pt-30 pb-8 lg:py-0 relative">
           <div className="relative w-[300px] h-[360px] sm:w-[400px] sm:h-[480px] lg:w-[500px] lg:h-[600px]" >
-               <Image className="rounded-4xl object-cover" src="/img1.jpg" fill alt="Namit Tickoo" />
+               <Image className="rounded-4xl  object-cover" src="/img1.jpg" fill alt="Namit Tickoo" />
             <p className="absolute bottom-4 lg:bottom-8 left-1/2 transform -translate-x-1/2 text-white font-semibold px-4 py-2 rounded text-sm lg:text-base">
               Namit Tickoo. coder.
             </p>
