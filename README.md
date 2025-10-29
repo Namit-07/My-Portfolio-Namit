@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Personal Portfolio — [namitdev.netlify.app](https://namitdev.netlify.app/)
 
-## Getting Started
+### 👨‍💻 Overview  
+Welcome to my **personal portfolio website**, a fully responsive and modern showcase of my journey as a **Full Stack Web Developer**.  
+It highlights my **skills, projects, blogs, and contact information**, reflecting both my technical expertise and personal growth in web development.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🧠 Tech Stack  
+- **Frontend:** HTML, CSS, JavaScript, React.js, Tailwind CSS  
+- **Backend:** Node.js, Express.js  
+- **Deployment:** Netlify  
+- **Email Integration:** Netlify Forms  
+- **Version Control:** Git & GitHub  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🚀 Features  
+✅ Clean, modern, and responsive design  
+✅ Dynamic **project showcase** with GitHub links  
+✅ **Blog section** — sharing my learnings & developer journey  
+✅ Integrated **contact form** that directly sends messages  
+✅ Fully optimized for both desktop and mobile  
+✅ Deployed using **Netlify** for fast, secure hosting  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### 📁 Folder Structure  
+Portfolio/
+│
+├── public/                # Static assets (icons, images, favicon)
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Main sections (Home, Projects, Blog, Contact)
+│   ├── styles/            # Tailwind + custom CSS
+│   └── App.js             # Main app entry
+│
+└── package.json           # Project metadata and dependencies
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 💡 Key Highlights  
+- Built completely **from scratch** using React + Tailwind CSS  
+- Focused on **performance, accessibility, and minimalism**  
+- Showcases major projects like:  
+  - 🔐 Password Manager  
+  - 🌐 URL Shortener (Next.js)  
+  - 🎯 LinkTree Clone  
+  - ✅ To-Do List App  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 📬 Contact  
+📧 **namittickoo07@gmail.com**  
+🌐 [Portfolio](https://namitdev.netlify.app/)  
+💻 [GitHub](https://github.com/Namit-07)  
+🔗 [LinkedIn](https://linkedin.com/in/namit-tickoo-69b2a9367)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🏁 Conclusion  
+This portfolio marks the culmination of my **Sigma Web Dev journey**, representing my skills in the **MERN stack** and my continuous drive toward achieving my dream — **GSoC 2026**.  
+Every line of code here symbolizes growth, consistency, and a developer who never gave up.
+
