@@ -77,11 +77,11 @@ export default function Blog() {
                                     <span className="bg-[#2665d6]/10 text-[#2665d6] px-3 py-1 rounded-full text-sm font-medium">Next.js</span>
                                     <span className="bg-[#2665d6]/10 text-[#2665d6] px-3 py-1 rounded-full text-sm font-medium">React</span>
                                 </div>
-                                {/* <Link href="/blog/nextjs-15"> */}
+                                <Link href="/blog/nextjs-15">
                                     <button className="bg-[#2665d6] text-white px-6 py-2 rounded-full font-bold hover:bg-[#1e54b7] hover:scale-105 transition-all duration-300">
                                         Read More →
                                     </button>
-                                {/* </Link> */}
+                                </Link>
                             </div>
                         </div>
 
@@ -100,11 +100,11 @@ export default function Blog() {
                                     <span className="bg-[#d2e823]/30 text-[#254f1a] px-3 py-1 rounded-full text-sm font-medium">GSoC</span>
                                     <span className="bg-[#d2e823]/30 text-[#254f1a] px-3 py-1 rounded-full text-sm font-medium">Open Source</span>
                                 </div>
-                                {/* <Link href="/blog/gsoc-journey"> */}
+                                <Link href="/blog/gsoc-journey">
                                     <button className="bg-[#254f1a] text-white px-6 py-2 rounded-full font-bold hover:bg-[#1a3a13] hover:scale-105 transition-all duration-300">
                                         Read More →
                                     </button>
-                                {/* </Link> */}
+                                </Link>
                             </div>
                         </div>
 
@@ -123,11 +123,11 @@ export default function Blog() {
                                     <span className="bg-[#780016]/10 text-[#780016] px-3 py-1 rounded-full text-sm font-medium">Security</span>
                                     <span className="bg-[#780016]/10 text-[#780016] px-3 py-1 rounded-full text-sm font-medium">MongoDB</span>
                                 </div>
-                                {/* <Link href="/blog/password-manager"> */}
+                                <Link href="/blog/password-manager">
                                     <button className="bg-[#780016] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5a0010] hover:scale-105 transition-all duration-300">
                                         Read More →
                                     </button>
-                                {/* </Link> */}
+                                </Link>
                             </div>
                         </div>
 
@@ -146,11 +146,11 @@ export default function Blog() {
                                     <span className="bg-[#2665d6]/10 text-[#2665d6] px-3 py-1 rounded-full text-sm font-medium">CSS</span>
                                     <span className="bg-[#2665d6]/10 text-[#2665d6] px-3 py-1 rounded-full text-sm font-medium">Tailwind</span>
                                 </div>
-                                {/* <Link href="/blog/tailwind-tips"> */}
+                                <Link href="/blog/tailwind-tips">
                                     <button className="bg-[#2665d6] text-white px-6 py-2 rounded-full font-bold hover:bg-[#1e54b7] hover:scale-105 transition-all duration-300">
                                         Read More →
                                     </button>
-                                {/* </Link> */}
+                                </Link>
                             </div>
                         </div>
 
@@ -169,11 +169,11 @@ export default function Blog() {
                                     <span className="bg-[#d2e823]/30 text-[#254f1a] px-3 py-1 rounded-full text-sm font-medium">Node.js</span>
                                     <span className="bg-[#d2e823]/30 text-[#254f1a] px-3 py-1 rounded-full text-sm font-medium">Performance</span>
                                 </div>
-                                {/* <Link href="/blog/nodejs-performance"> */}
+                                <Link href="/blog/nodejs-performance">
                                     <button className="bg-[#254f1a] text-white px-6 py-2 rounded-full font-bold hover:bg-[#1a3a13] hover:scale-105 transition-all duration-300">
                                         Read More →
                                     </button>
-                                {/* </Link> */}
+                                </Link>
                             </div>
                         </div>
 
@@ -192,11 +192,11 @@ export default function Blog() {
                                     <span className="bg-[#780016]/10 text-[#780016] px-3 py-1 rounded-full text-sm font-medium">API</span>
                                     <span className="bg-[#780016]/10 text-[#780016] px-3 py-1 rounded-full text-sm font-medium">Express</span>
                                 </div>
-                                {/* <Link href="/blog/rest-api"> */}
+                                <Link href="/blog/rest-api">
                                     <button className="bg-[#780016] text-white px-6 py-2 rounded-full font-bold hover:bg-[#5a0010] hover:scale-105 transition-all duration-300">
                                         Read More →
                                     </button>
-                                {/* </Link> */}
+                                </Link>
                             </div>
                         </div>
 

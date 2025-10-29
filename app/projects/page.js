@@ -209,7 +209,7 @@ export default function Projects() {
             <section ref={section5Ref} className={`bg-[#780016] min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 md:px-8 transition-all duration-1000 ${section5Visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <div className="flex items-center justify-center flex-col order-1 py-10">
                     <div className="relative z-100 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer w-[300px] h-[200px] sm:w-[500px] sm:h-[333px] lg:w-[600px] lg:h-[400px]">
-                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Password%20Manager" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/X.com%20Clone" target="_blank" rel="noopener noreferrer">
                             <Image className="rounded-4xl" src="/p4.png" fill alt="project1" />
                         </Link>
 
@@ -238,7 +238,7 @@ export default function Projects() {
                     </div>
 
                     <div className="input flex justify-center lg:justify-start">
-                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/Password%20Manager" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/X.com%20Clone" target="_blank" rel="noopener noreferrer">
                             <button className="text-black bg-[#e9c0e9] py-2 md:py-3 px-8 md:px-14 rounded-full text-lg md:text-2xl my-5 cursor-pointer hover:scale-110 hover:shadow-2xl hover:bg-[#ec51ec] transition-all duration-300 ease-in-out active:scale-95">🔗Github</button>
                         </Link>
                     </div>
