@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
+import ClientWrapper from "@/components/ClientWrapper";
+import CursorGlow from "@/components/CursorGlow";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,12 +28,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased lg:cursor-none`}
         style={{ fontFamily: 'var(--font-poppins)' }}
       >
-        
-        {children}
-        
+        <CursorGlow />
+        <ClientWrapper>
+          {children}
+        </ClientWrapper>
       </body>
     </html>
   );

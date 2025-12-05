@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export default function Experience() {
@@ -177,6 +178,7 @@ export default function Experience() {
                 </div>
             </section>
 
+            <Footer />
         </main>
     );
 }

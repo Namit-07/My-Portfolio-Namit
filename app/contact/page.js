@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect, useRef } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export default function Contact() {
@@ -242,6 +243,7 @@ export default function Contact() {
                 </div>
             </section>
 
+            <Footer />
         </main>
     );
 }
