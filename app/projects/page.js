@@ -8,6 +8,29 @@ import Link from "next/link";
 const projects = [
     {
         id: 1,
+        title: "SkillForge.AI",
+        subtitle: "AI Powered Learning Platform",
+        description: "An AI-driven platform that personalizes learning paths for users based on their skills and goals. Recruiter friendly profiles to showcase abilities.",
+        techStack: ["Next.js", "React", "Tailwind CSS", "Node.js", "MongoDB", "Express.js"],
+        features: [
+            "Personalized Onboarding: Multi-step wizard to assess skills and generate custom learning paths",
+            "Problem Recommendation Engine: Intelligent algorithm suggesting problems based on weak topics and target company",
+            "AI Doubt Resolution Agent: Chatbot providing progressive hints, concept explanations, and code reviews",
+            "Success Probability Dashboard: Real-time metric showing likelihood of cracking target company interviews",
+            "Progress Tracking: Topic proficiency scores, streak tracking, and comprehensive analytics",
+            "Gamification System: XP, levels, badges, and leaderboards to keep users motivated",
+            "Multi-Module Support: DSA, LLD, System Design, MERN Stack, CS Fundamentals, and more",
+            "Analytics Dashboard: Detailed insights on activity, performance, and improvement patterns"
+        ],
+        image: "/p0.png",
+        github: "https://github.com/Namit-07/PS-1-Personalised-Tech-interview-preparation-platform/tree/master",
+        bgColor: "bg-[#d2e823]",
+        textColor: "text-[#254f1a]",
+        accentColor: "bg-[#254f1a]",
+        accentText: "text-white"
+    },
+    {
+        id: 2,
         title: "BiTTree",
         subtitle: "LinkTree Clone",
         description: "A customizable profile link aggregator that lets users share multiple links through a single bio page.",
@@ -26,7 +49,7 @@ const projects = [
         accentText: "text-white"
     },
     {
-        id: 2,
+        id: 3,
         title: "<PassJAIL/>",
         subtitle: "Password Manager",
         description: "A secure web-based password management tool with local storage and MongoDB cloud sync options.",
@@ -42,25 +65,6 @@ const projects = [
         bgColor: "bg-[#d2e823]",
         textColor: "text-[#254f1a]",
         accentColor: "bg-[#254f1a]",
-        accentText: "text-white"
-    },
-    {
-        id: 3,
-        title: "TaskFlow",
-        subtitle: "Todo List App",
-        description: "A sleek todo list app that helps users plan and manage their daily tasks efficiently with persistent storage.",
-        techStack: ["React", "Tailwind CSS", "LocalStorage"],
-        features: [
-            "Add, delete, and complete tasks",
-            "Data persistence using browser storage",
-            "Lightweight & responsive design",
-            "Smooth animations & interactions"
-        ],
-        image: "/p3.png",
-        github: "https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/ToDo%20List",
-        bgColor: "bg-[#2665d6]",
-        textColor: "text-white",
-        accentColor: "bg-[#1e2330]",
         accentText: "text-white"
     },
     {
@@ -81,6 +85,25 @@ const projects = [
         textColor: "text-[#e9c0e9]",
         accentColor: "bg-[#e9c0e9]",
         accentText: "text-[#780016]"
+    },
+    {
+        id: 5,
+        title: "TaskFlow",
+        subtitle: "Todo List App",
+        description: "A sleek todo list app that helps users plan and manage their daily tasks efficiently with persistent storage.",
+        techStack: ["React", "Tailwind CSS", "LocalStorage"],
+        features: [
+            "Add, delete, and complete tasks",
+            "Data persistence using browser storage",
+            "Lightweight & responsive design",
+            "Smooth animations & interactions"
+        ],
+        image: "/p3.png",
+        github: "https://github.com/Namit-07/Web-Dev/tree/main/Sigma%20Web%20Dev%20course/Projects/ToDo%20List",
+        bgColor: "bg-[#2665d6]",
+        textColor: "text-white",
+        accentColor: "bg-[#1e2330]",
+        accentText: "text-white"
     }
 ];
 
@@ -123,23 +146,23 @@ export default function Projects() {
     return (
         <main>
             <Navbar hideNavbar={hideNavbar} />
-            
+
             {/* Hero Section */}
             <section className={`bg-[#780016] min-h-screen flex flex-col items-center justify-center px-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <div className="max-w-5xl mx-auto text-center">
                     <p className={`text-[#d2e823] font-bold text-lg md:text-xl mb-4 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                         ✨ Featured Work
                     </p>
-                    
+
                     <h1 className={`text-[#e9c0e9] font-extrabold text-5xl md:text-7xl lg:text-8xl mb-6 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                         My Projects.
                     </h1>
-                    
+
                     <p className={`text-[#e9c0e9]/80 font-medium text-base md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                        A curated collection of projects showcasing my journey in full-stack development. 
+                        A curated collection of projects showcasing my journey in full-stack development.
                         Each project represents a unique challenge solved with modern technologies.
                     </p>
-                    
+
                     {/* Stats */}
                     <div className={`flex justify-center gap-8 md:gap-16 mt-12 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                         <div className="text-center">
@@ -160,7 +183,7 @@ export default function Projects() {
 
             {/* Projects */}
             {projects.map((project, index) => (
-                <section 
+                <section
                     key={project.id}
                     ref={el => projectRefs.current[index] = el}
                     className={`${project.bgColor} min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-8 px-4 md:px-8 py-16 lg:py-0 transition-all duration-1000 ${visibleProjects[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
@@ -172,13 +195,13 @@ export default function Projects() {
                             <span className={`absolute -top-12 ${index % 2 === 0 ? '-right-4' : '-left-4'} text-8xl md:text-9xl font-black ${project.textColor} opacity-10 select-none z-0`}>
                                 0{project.id}
                             </span>
-                            
+
                             <div className="relative z-10 hover:scale-105 transition-all duration-500 ease-out cursor-pointer w-[300px] h-[200px] sm:w-[500px] sm:h-[333px] lg:w-[600px] lg:h-[400px]">
                                 <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                                    <Image 
-                                        className="rounded-3xl shadow-2xl" 
-                                        src={project.image} 
-                                        fill 
+                                    <Image
+                                        className="rounded-3xl shadow-2xl"
+                                        src={project.image}
+                                        fill
                                         alt={project.title}
                                         style={{ objectFit: 'cover' }}
                                     />
@@ -192,28 +215,28 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* Content */}
                     <div className={`flex justify-center flex-col ${index % 2 === 0 ? 'lg:order-1 lg:ml-[8vw]' : 'lg:order-2 lg:ml-[5vw]'} lg:my-50`}>
                         {/* Subtitle */}
                         <p className={`${project.textColor} opacity-70 font-bold text-lg md:text-xl mb-2`}>
                             {project.subtitle}
                         </p>
-                        
+
                         {/* Title */}
                         <h2 className={`${project.textColor} font-extrabold text-4xl md:text-5xl lg:text-6xl mb-4`}>
                             {project.title}
                         </h2>
-                        
+
                         {/* Description */}
                         <p className={`${project.textColor} opacity-80 font-medium text-base md:text-lg mb-6`}>
                             {project.description}
                         </p>
-                        
+
                         {/* Tech Stack */}
                         <div className="flex flex-wrap gap-2 mb-6">
                             {project.techStack.map((tech, i) => (
-                                <span 
+                                <span
                                     key={i}
                                     className={`${project.accentColor} ${project.accentText} px-4 py-2 rounded-full text-sm font-bold hover:scale-105 transition-transform duration-300`}
                                 >
@@ -221,7 +244,7 @@ export default function Projects() {
                                 </span>
                             ))}
                         </div>
-                        
+
                         {/* Features */}
                         <div className="space-y-2 mb-8">
                             <p className={`${project.textColor} font-bold text-lg`}>Key Features:</p>
@@ -232,12 +255,12 @@ export default function Projects() {
                                 </p>
                             ))}
                         </div>
-                        
+
                         {/* Button */}
                         <div className="flex justify-center lg:justify-start">
                             <Link href={project.github} target="_blank" rel="noopener noreferrer">
                                 <button className={`${project.accentColor} ${project.accentText} py-3 md:py-4 px-8 md:px-12 rounded-full text-lg md:text-xl font-bold flex items-center gap-3 hover:scale-110 hover:shadow-2xl transition-all duration-300 ease-in-out active:scale-95`}>
-                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
                                     View on GitHub
                                 </button>
                             </Link>

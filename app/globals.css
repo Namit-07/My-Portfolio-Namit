@@ -1,16 +1,5 @@
 @import "tailwindcss";
 
-/* Hide default cursor on desktop for custom cursor effect */
-@media (min-width: 1024px) {
-  * {
-    cursor: none !important;
-  }
-  
-  a, button, input, textarea, select {
-    cursor: none !important;
-  }
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
