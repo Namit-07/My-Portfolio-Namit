@@ -24,9 +24,9 @@ const projects = [
         ],
         image: "/p0.png",
         github: "https://github.com/Namit-07/PS-1-Personalised-Tech-interview-preparation-platform/tree/master",
-        bgColor: "bg-[#d2e823]",
-        textColor: "text-[#254f1a]",
-        accentColor: "bg-[#254f1a]",
+        bgColor: "bg-[#2665d6]",
+        textColor: "text-white",
+        accentColor: "bg-[#1e2330]",
         accentText: "text-white"
     },
     {
