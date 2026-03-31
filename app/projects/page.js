@@ -31,6 +31,25 @@ const projects = [
     },
     {
         id: 2,
+        title: "StormCode",
+        subtitle: "AI Powered Repo Analyzer",
+        description: "An AI-driven platform that analyzes GitHub repositories to provide insights on code quality, maintainability, and potential issues. It generates detailed reports and actionable recommendations for developers.",
+        techStack: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Groq AI", "Mermaid.js"],
+        features: [
+            "Repository Analysis: Connect GitHub repos to analyze code quality, structure, and maintainability",
+            "AI-Powered Insights: Generate detailed reports with actionable recommendations for improvement",
+            "Code Visualization: Interactive diagrams and charts to visualize code structure and dependencies",
+            "Issue Detection: Identify potential bugs, security vulnerabilities, and code smells",
+        ],
+        image: "/p5.png",
+        github: "https://github.com/Namit-07/StormCode",
+        bgColor: "bg-[#780016]",
+        textColor: "text-white",
+        accentColor: "bg-[#1e2330]",
+        accentText: "text-white"
+    },
+    {
+        id: 3,
         title: "BiTTree",
         subtitle: "LinkTree Clone",
         description: "A customizable profile link aggregator that lets users share multiple links through a single bio page.",
@@ -49,7 +68,7 @@ const projects = [
         accentText: "text-white"
     },
     {
-        id: 3,
+        id: 4,
         title: "<PassJAIL/>",
         subtitle: "Password Manager",
         description: "A secure web-based password management tool with local storage and MongoDB cloud sync options.",
@@ -68,7 +87,7 @@ const projects = [
         accentText: "text-white"
     },
     {
-        id: 4,
+        id: 5,
         title: "X Clone",
         subtitle: "Twitter Recreation",
         description: "A Twitter/X clone built with React and Tailwind CSS, featuring modern UI patterns and responsive design.",
@@ -87,7 +106,7 @@ const projects = [
         accentText: "text-[#780016]"
     },
     {
-        id: 5,
+        id: 6,
         title: "TaskFlow",
         subtitle: "Todo List App",
         description: "A sleek todo list app that helps users plan and manage their daily tasks efficiently with persistent storage.",
